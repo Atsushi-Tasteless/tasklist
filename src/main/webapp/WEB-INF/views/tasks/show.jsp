@@ -8,8 +8,8 @@
 
         <p>タイトル：<c:out value="${task.title}"/></p>
         <p>内容：<c:out value="${task.content }" /></p>
-        <p>作成日時：<fmt:formatDate value="${task.created_at }" pattern="yyyy-mm-dd hh:mm:ss "/></p>
-        <p>更新日時：<fmt:formatDate value="${task.updated_at }" pattern="yyyy-mm-dd hh:mm:ss " /></p>
+        <p>作成日時：<fmt:formatDate value="${task.created_at }" pattern="yyyy-MM-dd hh:mm:ss "/></p>
+        <p>更新日時：<fmt:formatDate value="${task.updated_at }" pattern="yyyy-MM-dd hh:mm:ss " /></p>
 
         <p><a href="${pageContext.request.contextPath }/index">一覧へ戻る</a></p>
         <p><a href="${pageContext.request.contextPath }/edit?id=${task.id }">このタスクを編集する</a></p>
